@@ -1,11 +1,11 @@
 import XCTest
-@testable import CalisteSwift
+@testable import CalistenSwift
 
-final class CalisteSwiftTests: XCTestCase {
+final class CalistenSwiftTests: XCTestCase {
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(CalisteSwift().text, "Hello, World!")
+        XCTAssertEqual(CalistenSwift().text, "Hello, World!")
     }
 }

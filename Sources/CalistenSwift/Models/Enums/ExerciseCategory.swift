@@ -7,6 +7,11 @@
 
 import Foundation
 
+/// Category of an exercise
 enum ExerciseCategory {
-    case dynamic, warmup, mobility, stretching, `static`
+    case dynamic,
+         warmup,
+         mobility,
+         stretching,
+         `static`
 }
