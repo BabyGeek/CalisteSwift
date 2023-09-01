@@ -14,7 +14,7 @@ struct HorizontalPushExercise: Exercisable, Routinable, Equipable, Progressable 
         
     var progressions: [Exercisable]
     
-    var muscleGroups: Set<MuscleGroup>
+    var targetMuscles: Set<Muscle>
     
     var force: ExerciseForce
     
@@ -37,7 +37,7 @@ struct HorizontalPushExercise: Exercisable, Routinable, Equipable, Progressable 
          preriquires: [Exercisable] = [],
          progressions: [Exercisable] = [],
          routines: Set<Routine> = [.fullBody, .lowerBody, .upperBody, .pull, .EMOM, .HIIT],
-         muscleGroups: Set<MuscleGroup>,
+         targetMuscles: Set<Muscle>,
          neededEquipments: Set<Equipment> = [],
          recommendedEquipments: Set<Equipment> = [],
          category: ExerciseCategory = .dynamic,
@@ -48,7 +48,7 @@ struct HorizontalPushExercise: Exercisable, Routinable, Equipable, Progressable 
         self.force = .push
         self.direction = .horizontal
         self.routines = routines
-        self.muscleGroups = muscleGroups
+        self.targetMuscles = targetMuscles
         self.neededEquipments = neededEquipments
         self.recommendedEquipments = recommendedEquipments
         self.category = category

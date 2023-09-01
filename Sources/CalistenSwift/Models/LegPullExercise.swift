@@ -14,7 +14,7 @@ struct LegPullExercise: Exercisable, Routinable, Equipable, Progressable {
         
     var progressions: [Exercisable]
     
-    var muscleGroups: Set<MuscleGroup>
+    var targetMuscles: Set<Muscle>
     
     var force: ExerciseForce
     
@@ -37,7 +37,7 @@ struct LegPullExercise: Exercisable, Routinable, Equipable, Progressable {
          preriquires: [Exercisable] = [],
          progressions: [Exercisable] = [],
          routines: Set<Routine> = [.fullBody, .lowerBody, .legs, .EMOM, .HIIT],
-         muscleGroups: Set<MuscleGroup> = [.calves, .glutes, .legs, .harmstrings],
+         targetMuscles: Set<Muscle> = [.calves, .glutes, .legs, .harmstrings],
          neededEquipments: Set<Equipment> = [],
          recommendedEquipments: Set<Equipment> = [],
          category: ExerciseCategory = .dynamic,
@@ -48,7 +48,7 @@ struct LegPullExercise: Exercisable, Routinable, Equipable, Progressable {
         self.force = .pull
         self.direction = .vertical
         self.routines = routines
-        self.muscleGroups = muscleGroups
+        self.targetMuscles = targetMuscles
         self.neededEquipments = neededEquipments
         self.recommendedEquipments = recommendedEquipments
         self.category = category

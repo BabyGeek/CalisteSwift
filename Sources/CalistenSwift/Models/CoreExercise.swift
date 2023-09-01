@@ -12,7 +12,7 @@ struct CoreExercise: Exercisable, Routinable, Progressable, Equipable {
     
     var difficulty: Difficulty
     
-    var muscleGroups: Set<MuscleGroup>
+    var targetMuscles: Set<Muscle>
     
     var force: ExerciseForce
     
@@ -34,7 +34,7 @@ struct CoreExercise: Exercisable, Routinable, Progressable, Equipable {
     
     init(name: String,
          difficulty: Difficulty,
-         muscleGroups: Set<MuscleGroup> = [.abdominals],
+         targetMuscles: Set<Muscle> = [.abdominals],
          force: ExerciseForce,
          direction: ExerciseDirection,
          category: ExerciseCategory = .static,
@@ -46,7 +46,7 @@ struct CoreExercise: Exercisable, Routinable, Progressable, Equipable {
          isMilestone: Bool = false) {
         self.name = NSLocalizedString(name, bundle: .module, comment: "Exercise name")
         self.difficulty = difficulty
-        self.muscleGroups = muscleGroups
+        self.targetMuscles = targetMuscles
         self.force = force
         self.direction = direction
         self.category = category

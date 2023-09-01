@@ -1,5 +1,5 @@
 //
-//  MuscleGroup.swift
+//  Muscle.swift
 //  
 //
 //  Created by Paul Oggero on 31/08/2023.
@@ -7,8 +7,8 @@
 
 import Foundation
 
-/// The different muscle groups
-enum MuscleGroup {
+/// The different muscles that can be targetted by exercises
+enum Muscle {
     case shoulders,
          chest,
          biceps,

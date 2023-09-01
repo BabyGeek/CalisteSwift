@@ -14,7 +14,7 @@ struct HorizontalPullExercise: Exercisable, Routinable, Equipable, Progressable,
         
     var progressions: [Exercisable]
     
-    var muscleGroups: Set<MuscleGroup>
+    var targetMuscles: Set<Muscle>
     
     var force: ExerciseForce
     
@@ -39,7 +39,7 @@ struct HorizontalPullExercise: Exercisable, Routinable, Equipable, Progressable,
          preriquires: [Exercisable] = [],
          progressions: [Exercisable] = [],
          routines: Set<Routine> = [.fullBody, .lowerBody, .upperBody, .pull, .EMOM, .HIIT],
-         muscleGroups: Set<MuscleGroup>,
+         targetMuscles: Set<Muscle>,
          neededEquipments: Set<Equipment> = [],
          recommendedEquipments: Set<Equipment> = [.chalk],
          side: ExerciseSide,
@@ -51,7 +51,7 @@ struct HorizontalPullExercise: Exercisable, Routinable, Equipable, Progressable,
         self.force = .pull
         self.direction = .horizontal
         self.routines = routines
-        self.muscleGroups = muscleGroups
+        self.targetMuscles = targetMuscles
         self.neededEquipments = neededEquipments
         self.recommendedEquipments = recommendedEquipments
         self.side = side

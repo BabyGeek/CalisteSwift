@@ -14,7 +14,7 @@ struct VerticalPullExercise: Exercisable, Routinable, Equipable, Progressable {
         
     var progressions: [Exercisable]
     
-    var muscleGroups: Set<MuscleGroup>
+    var targetMuscles: Set<Muscle>
     
     var force: ExerciseForce
     
@@ -37,7 +37,7 @@ struct VerticalPullExercise: Exercisable, Routinable, Equipable, Progressable {
          preriquires: [Exercisable] = [],
          progressions: [Exercisable] = [],
          routines: Set<Routine> = [.fullBody, .upperBody, .pull, .EMOM, .HIIT],
-         muscleGroups: Set<MuscleGroup>,
+         targetMuscles: Set<Muscle>,
          neededEquipments: Set<Equipment> = [],
          recommendedEquipments: Set<Equipment> = [.chalk],
          category: ExerciseCategory = .dynamic,
@@ -48,7 +48,7 @@ struct VerticalPullExercise: Exercisable, Routinable, Equipable, Progressable {
         self.force = .pull
         self.direction = .vertical
         self.routines = routines
-        self.muscleGroups = muscleGroups
+        self.targetMuscles = targetMuscles
         self.neededEquipments = neededEquipments
         self.recommendedEquipments = recommendedEquipments
         self.category = category

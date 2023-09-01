@@ -14,7 +14,7 @@ protocol Exercisable {
     
     var difficulty: Difficulty { get }
     
-    var muscleGroups: Set<MuscleGroup> { get }
+    var targetMuscles: Set<Muscle> { get }
 
     var force: ExerciseForce { get }
     var direction: ExerciseDirection { get }
