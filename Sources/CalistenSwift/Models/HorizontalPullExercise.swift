@@ -7,14 +7,12 @@
 
 import Foundation
 
-struct HorizontalPullExercise: Exercisable, Routinable, Equipable, Progressable, Regressable, Sidable {
+struct HorizontalPullExercise: Exercisable, Routinable, Equipable, Progressable, Sidable {
     var name: String
     
     var difficulty: Difficulty
-    
-    var regressions: [Progressable]
-    
-    var progressions: [Regressable]
+        
+    var progressions: [Exercisable]
     
     var muscleGroups: Set<MuscleGroup>
     
@@ -34,20 +32,21 @@ struct HorizontalPullExercise: Exercisable, Routinable, Equipable, Progressable,
     
     var preriquires: [Exercisable]
     
+    var isMilestone: Bool
+    
     init(name: String,
          difficulty: Difficulty,
-         regressions: [HorizontalPullExercise] = [],
-         progressions: [HorizontalPullExercise] = [],
+         preriquires: [Exercisable] = [],
+         progressions: [Exercisable] = [],
          routines: Set<Routine> = [.fullBody, .lowerBody, .upperBody, .pull, .EMOM, .HIIT],
          muscleGroups: Set<MuscleGroup>,
          neededEquipments: Set<Equipment> = [],
-         recommendedEquipments: Set<Equipment> = [.chalk, .mediumParallettes],
+         recommendedEquipments: Set<Equipment> = [.chalk],
          side: ExerciseSide,
          category: ExerciseCategory = .dynamic,
-         preriquires: [Exercisable] = []) {
+         isMilestone: Bool = false) {
         self.name = NSLocalizedString(name, bundle: .module, comment: "Exercise name")
         self.difficulty = difficulty
-        self.regressions = regressions
         self.progressions = progressions
         self.force = .pull
         self.direction = .horizontal
@@ -58,5 +57,6 @@ struct HorizontalPullExercise: Exercisable, Routinable, Equipable, Progressable,
         self.side = side
         self.category = category
         self.preriquires = preriquires
+        self.isMilestone = isMilestone
     }
 }

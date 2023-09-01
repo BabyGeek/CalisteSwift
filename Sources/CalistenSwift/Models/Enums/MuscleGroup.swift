@@ -21,8 +21,7 @@ enum MuscleGroup {
          glutes,
          harmstrings,
          legs,
-         trapezus,
-         pectoral,
+         trapezius,
          dorsals,
          forearms,
          femoral,
@@ -33,5 +32,9 @@ enum MuscleGroup {
          lowerBack,
          middleBack,
          abductors,
-         adductors
+         adductors,
+         anteriorDeltoids,
+         pectorals,
+         hipFlexors,
+         deltoids
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CoreExercise: Exercisable, Routinable, Progressable, Regressable, Equipable {
+struct CoreExercise: Exercisable, Routinable, Progressable, Equipable {
     var name: String
     
     var difficulty: Difficulty
@@ -24,13 +24,13 @@ struct CoreExercise: Exercisable, Routinable, Progressable, Regressable, Equipab
     
     var routines: Set<Routine>
     
-    var progressions: [Regressable]
-    
-    var regressions: [Progressable]
+    var progressions: [Exercisable]
     
     var neededEquipments: Set<Equipment>
     
     var recommendedEquipments: Set<Equipment>
+    
+    var isMilestone: Bool
     
     init(name: String,
          difficulty: Difficulty,
@@ -40,10 +40,10 @@ struct CoreExercise: Exercisable, Routinable, Progressable, Regressable, Equipab
          category: ExerciseCategory = .static,
          preriquires: [Exercisable] = [],
          routines: Set<Routine> = [.fullBody, .core, .EMOM, .HIIT],
-         progressions: [Regressable] = [],
-         regressions: [Progressable] = [],
+         progressions: [Exercisable] = [],
          neededEquipments: Set<Equipment> = [],
-         recommendedEquipments: Set<Equipment> = []) {
+         recommendedEquipments: Set<Equipment> = [],
+         isMilestone: Bool = false) {
         self.name = NSLocalizedString(name, bundle: .module, comment: "Exercise name")
         self.difficulty = difficulty
         self.muscleGroups = muscleGroups
@@ -53,8 +53,8 @@ struct CoreExercise: Exercisable, Routinable, Progressable, Regressable, Equipab
         self.preriquires = preriquires
         self.routines = routines
         self.progressions = progressions
-        self.regressions = regressions
         self.neededEquipments = neededEquipments
         self.recommendedEquipments = recommendedEquipments
+        self.isMilestone = isMilestone
     }
 }

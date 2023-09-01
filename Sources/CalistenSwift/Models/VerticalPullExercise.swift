@@ -7,14 +7,12 @@
 
 import Foundation
 
-struct VerticalPullExercise: Exercisable, Routinable, Equipable, Progressable, Regressable {
+struct VerticalPullExercise: Exercisable, Routinable, Equipable, Progressable {
     var name: String
     
     var difficulty: Difficulty
-    
-    var regressions: [Progressable]
-    
-    var progressions: [Regressable]
+        
+    var progressions: [Exercisable]
     
     var muscleGroups: Set<MuscleGroup>
     
@@ -32,19 +30,20 @@ struct VerticalPullExercise: Exercisable, Routinable, Equipable, Progressable, R
     
     var preriquires: [Exercisable]
     
+    var isMilestone: Bool
+    
     init(name: String,
          difficulty: Difficulty,
-         regressions: [VerticalPullExercise] = [],
-         progressions: [VerticalPullExercise] = [],
+         preriquires: [Exercisable] = [],
+         progressions: [Exercisable] = [],
          routines: Set<Routine> = [.fullBody, .upperBody, .pull, .EMOM, .HIIT],
          muscleGroups: Set<MuscleGroup>,
          neededEquipments: Set<Equipment> = [],
-         recommendedEquipments: Set<Equipment> = [.chalk, .doorBar],
+         recommendedEquipments: Set<Equipment> = [.chalk],
          category: ExerciseCategory = .dynamic,
-         preriquires: [Exercisable] = []) {
+         isMilestone: Bool = false) {
         self.name = NSLocalizedString(name, bundle: .module, comment: "Exercise name")
         self.difficulty = difficulty
-        self.regressions = regressions
         self.progressions = progressions
         self.force = .pull
         self.direction = .vertical
@@ -54,5 +53,6 @@ struct VerticalPullExercise: Exercisable, Routinable, Equipable, Progressable, R
         self.recommendedEquipments = recommendedEquipments
         self.category = category
         self.preriquires = preriquires
+        self.isMilestone = isMilestone
     }
 }

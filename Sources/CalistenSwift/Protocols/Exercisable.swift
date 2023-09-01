@@ -20,6 +20,8 @@ protocol Exercisable {
     var direction: ExerciseDirection { get }
     var category: ExerciseCategory { get }
     var preriquires: [Exercisable] { get }
+    
+    var isMilestone: Bool { get }
 }
 
 
