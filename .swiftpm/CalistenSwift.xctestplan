@@ -1,0 +1,35 @@
+{
+  "configurations" : [
+    {
+      "id" : "D52AB50D-7527-46CA-92F1-5867FE4BD2F5",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:",
+          "identifier" : "CalistenSwift",
+          "name" : "CalistenSwift"
+        }
+      ]
+    }
+  },
+  "testTargets" : [
+    {
+      "skippedTests" : [
+        "CalistenSwiftTests"
+      ],
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "CalistenSwiftTests",
+        "name" : "CalistenSwiftTests"
+      }
+    }
+  ],
+  "version" : 1
+}
