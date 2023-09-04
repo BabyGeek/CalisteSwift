@@ -10,7 +10,7 @@ import Foundation
 public struct Exercises {
     static let exercises: Exercises = .init()
     
-    var all: [Exercisable] = []
+    var all: [Exercise] = []
     
     private init() {
         defineHorizontalPath()

@@ -7,31 +7,7 @@
 
 import Foundation
 
-public struct HorizontalPushExercise: Exercisable, Routinable, Equipable, Progressable {
-    public var name: ExerciseName
-
-    public var difficulty: Difficulty
-        
-    public var progressions: [Exercisable]
-    
-    public var targetMuscles: Set<Muscle>
-    
-    public var force: ExerciseForce
-    
-    public var direction: ExerciseDirection
-    
-    public var routines: Set<Routine>
-    
-    public var neededEquipments: Set<Equipment>
-    
-    public var recommendedEquipments: Set<Equipment>
-        
-    public var category: ExerciseCategory
-    
-    public var preriquires: [Exercisable]
-    
-    public var isMilestone: Bool
-    
+public class HorizontalPushExercise: Exercise {
     init(name: ExerciseName,
          difficulty: Difficulty,
          preriquires: [Exercisable] = [],
@@ -42,17 +18,20 @@ public struct HorizontalPushExercise: Exercisable, Routinable, Equipable, Progre
          recommendedEquipments: Set<Equipment> = [],
          category: ExerciseCategory = .dynamic,
          isMilestone: Bool = false) {
-        self.name = name
-        self.difficulty = difficulty
-        self.progressions = progressions
-        self.force = .push
-        self.direction = .horizontal
-        self.routines = routines
-        self.targetMuscles = targetMuscles
-        self.neededEquipments = neededEquipments
-        self.recommendedEquipments = recommendedEquipments
-        self.category = category
-        self.preriquires = preriquires
-        self.isMilestone = isMilestone
+        super.init(
+            name: name,
+            difficulty: difficulty,
+            preriquires: preriquires,
+            progressions: progressions,
+            force: .push,
+            direction: .horizontal,
+            routines: routines,
+            targetMuscles: targetMuscles,
+            neededEquipments: neededEquipments,
+            recommendedEquipments: recommendedEquipments,
+            category: category,
+            classification: .horizontal,
+            side: .none,
+            isMilestone: isMilestone)
     }
 }

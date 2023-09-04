@@ -306,7 +306,8 @@ public struct HorizontalExercises {
         neededEquipments: [
             .pullUpBar
         ],
-        side: .back
+        side: .back,
+        isMilestone: true
     )
     
     var FLToInverted: HorizontalPullExercise = .init(
@@ -356,8 +357,7 @@ public struct HorizontalExercises {
         neededEquipments: [
             .pullUpBar
         ],
-        side: .back,
-        isMilestone: true
+        side: .back
     )
     
     var threeSixtyPull: HorizontalPullExercise = .init(
@@ -384,7 +384,8 @@ public struct HorizontalExercises {
         neededEquipments: [
             .pullUpBar
         ],
-        side: .back
+        side: .back,
+        isMilestone: true
     )
     
     var germanHangPO: HorizontalPullExercise = .init(

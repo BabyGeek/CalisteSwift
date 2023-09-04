@@ -7,33 +7,7 @@
 
 import Foundation
 
-public struct VerticalPushExercise: Exercisable, Routinable, Equipable, Progressable, Sidable {
-    public var name: ExerciseName
-    
-    public var difficulty: Difficulty
-    
-    public var progressions: [Exercisable]
-    
-    public var targetMuscles: Set<Muscle>
-    
-    public var force: ExerciseForce
-    
-    public var direction: ExerciseDirection
-    
-    public var routines: Set<Routine>
-    
-    public var neededEquipments: Set<Equipment>
-    
-    public var recommendedEquipments: Set<Equipment>
-    
-    public var side: ExerciseSide
-    
-    public var category: ExerciseCategory
-    
-    public var preriquires: [Exercisable]
-    
-    public var isMilestone: Bool
-    
+public class VerticalPushExercise: Exercise {
     init(name: ExerciseName,
          difficulty: Difficulty,
          preriquires: [Exercisable] = [],
@@ -45,18 +19,20 @@ public struct VerticalPushExercise: Exercisable, Routinable, Equipable, Progress
          side: ExerciseSide,
          category: ExerciseCategory = .dynamic,
          isMilestone: Bool = false) {
-        self.name = name
-        self.difficulty = difficulty
-        self.progressions = progressions
-        self.force = .push
-        self.direction = .vertical
-        self.routines = routines
-        self.targetMuscles = targetMuscles
-        self.neededEquipments = neededEquipments
-        self.recommendedEquipments = recommendedEquipments
-        self.side = side
-        self.category = category
-        self.preriquires = preriquires
-        self.isMilestone = isMilestone
+        super.init(
+            name: name,
+            difficulty: difficulty,
+            preriquires: preriquires,
+            progressions: progressions,
+            force: .push,
+            direction: .vertical,
+            routines: routines,
+            targetMuscles: targetMuscles,
+            neededEquipments: neededEquipments,
+            recommendedEquipments: recommendedEquipments,
+            category: category,
+            classification: .vertical,
+            side: side,
+            isMilestone: isMilestone)
     }
 }
