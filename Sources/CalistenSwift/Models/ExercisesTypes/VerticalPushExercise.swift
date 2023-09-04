@@ -8,7 +8,7 @@
 import Foundation
 
 struct VerticalPushExercise: Exercisable, Routinable, Equipable, Progressable, Sidable {
-    var name: String
+    var name: ExerciseName
     
     var difficulty: Difficulty
     
@@ -34,7 +34,7 @@ struct VerticalPushExercise: Exercisable, Routinable, Equipable, Progressable, S
     
     var isMilestone: Bool
     
-    init(name: String,
+    init(name: ExerciseName,
          difficulty: Difficulty,
          preriquires: [Exercisable] = [],
          progressions: [Exercisable] = [],
@@ -45,7 +45,7 @@ struct VerticalPushExercise: Exercisable, Routinable, Equipable, Progressable, S
          side: ExerciseSide,
          category: ExerciseCategory = .dynamic,
          isMilestone: Bool = false) {
-        self.name = NSLocalizedString(name, bundle: .module, comment: "Exercise name")
+        self.name = name
         self.difficulty = difficulty
         self.progressions = progressions
         self.force = .push

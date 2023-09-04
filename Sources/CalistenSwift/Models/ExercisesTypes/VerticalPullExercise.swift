@@ -1,14 +1,14 @@
 //
-//  LegExercise.swift
+//  VerticalPushExercise.swift
 //  
 //
-//  Created by Paul Oggero on 31/08/2023.
+//  Created by Paul Oggero on 01/09/2023.
 //
 
 import Foundation
 
-struct LegPushExercise: Exercisable, Routinable, Equipable, Progressable {
-    var name: String
+struct VerticalPullExercise: Exercisable, Routinable, Equipable, Progressable {
+    var name: ExerciseName
     
     var difficulty: Difficulty
         
@@ -25,27 +25,27 @@ struct LegPushExercise: Exercisable, Routinable, Equipable, Progressable {
     var neededEquipments: Set<Equipment>
     
     var recommendedEquipments: Set<Equipment>
-    
+        
     var category: ExerciseCategory
     
     var preriquires: [Exercisable]
     
     var isMilestone: Bool
     
-    init(name: String,
+    init(name: ExerciseName,
          difficulty: Difficulty,
          preriquires: [Exercisable] = [],
          progressions: [Exercisable] = [],
-         routines: Set<Routine> = [.fullBody, .lowerBody, .legs, .EMOM, .HIIT],
-         targetMuscles: Set<Muscle> = [.calves, .glutes, .legs, .harmstrings],
+         routines: Set<Routine> = [.fullBody, .upperBody, .pull, .EMOM, .HIIT],
+         targetMuscles: Set<Muscle>,
          neededEquipments: Set<Equipment> = [],
-         recommendedEquipments: Set<Equipment> = [],
+         recommendedEquipments: Set<Equipment> = [.chalk],
          category: ExerciseCategory = .dynamic,
          isMilestone: Bool = false) {
-        self.name = NSLocalizedString(name, bundle: .module, comment: "Exercise name")
+        self.name = name
         self.difficulty = difficulty
         self.progressions = progressions
-        self.force = .push
+        self.force = .pull
         self.direction = .vertical
         self.routines = routines
         self.targetMuscles = targetMuscles

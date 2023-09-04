@@ -36,5 +36,10 @@ enum Muscle {
          anteriorDeltoids,
          pectorals,
          hipFlexors,
-         deltoids
+         deltoids,
+         hips,
+         seratusAnterior,
+         posteriodDeltoids,
+         rhomboid,
+         teresMinor
 }

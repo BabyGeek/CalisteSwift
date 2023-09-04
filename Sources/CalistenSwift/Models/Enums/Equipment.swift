@@ -16,7 +16,7 @@ enum Equipment {
          mediumParallettes,
          dipBar,
          rings,
-         highBar,
+         pullUpBar,
          chalk,
          kettlebell,
          weightVest,

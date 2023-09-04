@@ -6,5 +6,49 @@
   
 */
 
-// Horizontal Push
+// Horizontal Pull
+
+// Back
 "germanHang" = "German Hang";
+"tuckSTC" = "Tuck Skin The Cat";
+"advTuckSTC" = "Advanced Tuck Skin The Cat";
+"pikeSTC" = "Pike Skin The Cat";
+"tuckBL" = "Tuck Back Lever";
+"advTuckBL" = "Advanced Tuck Back Lever";
+"tuckFL" = "Tuck Front Lever";
+"advTuckFL" = "Advanced Tuck Front Lever";
+"OLBL" = "One Leg Back Lever";
+"strBL" = "Straddle Back Lever";
+"BL" = "Back Lever";
+"BLPO" = "Back Lever Pullout";
+"OLFL" = "One Leg Front Lever";
+"strFL" = "Straddle Front Lever";
+"FL" = "Front Lever";
+"FLToInverted" = "Front Lever to Inverted";
+"HPFLtoInv" = "Hanging Pull Front Lever to Inverted";
+"threeSixtyPull" = "360° Pull";
+"germanHangPO" = "German Hang Pullout";
+"BAPUtoBL" = "Bent Arm Pull Up to Back Lever";
+"HLtoBL" = "Handstand Lower to Back Lever";
+
+// Front
+"VRow" = "Vertical Row";
+"incRow" = "Incline Row";
+"row" = "Row";
+"wideRow" = "Wide Row";
+"LHang" = "L Hang";
+"archerRow" = "Archer Row";
+"archerInRow" = "Archer Intermediate Row";
+"strOARow" = "Straddle One Arm Row";
+"OARow" = "One Arm Row";
+"tuckICM" = "Tuck Ice Cream Maker";
+"tuckFLRow" = "Tuck Front Lever Row";
+"advTuckFLRow" = "Advanced Tuck Front Lever Row";
+"strFLRow" = "Straddle Front Lever Row";
+"FLRow" = "Front Lever Row";
+"ironCrossP" = "Iron Cross Progression";
+"ironCross" = "Iron Cross";
+"ironCrossToBL" = "Iron Cross to Back Lever";
+
+
+
