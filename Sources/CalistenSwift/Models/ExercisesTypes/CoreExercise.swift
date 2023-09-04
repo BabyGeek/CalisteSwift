@@ -7,30 +7,30 @@
 
 import Foundation
 
-struct CoreExercise: Exercisable, Routinable, Progressable, Equipable {
-    var name: ExerciseName
+public struct CoreExercise: Exercisable, Routinable, Progressable, Equipable {
+    public var name: ExerciseName
     
-    var difficulty: Difficulty
+    public var difficulty: Difficulty
     
-    var targetMuscles: Set<Muscle>
+    public var targetMuscles: Set<Muscle>
     
-    var force: ExerciseForce
+    public var force: ExerciseForce
     
-    var direction: ExerciseDirection
+    public var direction: ExerciseDirection
     
-    var category: ExerciseCategory
+    public var category: ExerciseCategory
     
-    var preriquires: [Exercisable]
+    public var preriquires: [Exercisable]
     
-    var routines: Set<Routine>
+    public var routines: Set<Routine>
     
-    var progressions: [Exercisable]
+    public var progressions: [Exercisable]
     
-    var neededEquipments: Set<Equipment>
+    public var neededEquipments: Set<Equipment>
     
-    var recommendedEquipments: Set<Equipment>
+    public var recommendedEquipments: Set<Equipment>
     
-    var isMilestone: Bool
+    public var isMilestone: Bool
     
     init(name: ExerciseName,
          difficulty: Difficulty,
