@@ -63,4 +63,51 @@ public struct Exercises {
         all.append(contentsOf: horizontalPull)
     }
     
+    
+    // MARK: Filters
+    public func filterBy<E>(
+        _ keyPath: KeyPath<Exercise, E>,
+        value: E) -> [Exercise] where E: Equatable {
+            all
+                .filterBy(keyPath, value: value)
+        }
+    
+    public func filterByMuscles(_ muscles: Set<Muscle>) -> [Exercise] {
+        all
+            .filterByMuscles(muscles)
+    }
+    
+    public func filterByPreriquires(_ preriquires: [Exercise]) -> [Exercise] {
+        all
+            .filterByPreriquires(preriquires)
+    }
+    
+    public func milestones() -> [Exercise] {
+        all
+            .milestones()
+    }
+    
+    public func horizontalBackExercises() -> [Exercise] {
+        all
+            .filterByClassification(.horizontal)
+            .filterBySide(.back)
+    }
+    
+    public func horizontalFrontExercises() -> [Exercise] {
+        all
+            .filterByClassification(.horizontal)
+            .filterBySide(.front)
+    }
+    
+    public func verticalBackExercises() -> [Exercise] {
+        all
+            .filterByClassification(.vertical)
+            .filterBySide(.back)
+    }
+    
+    public func verticalFrontExercises() -> [Exercise] {
+        all
+            .filterByClassification(.vertical)
+            .filterBySide(.front)
+    }
 }
