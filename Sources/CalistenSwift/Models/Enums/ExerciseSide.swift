@@ -8,7 +8,7 @@
 import Foundation
 
 /// Side that an exercise works
-enum ExerciseSide {
+public enum ExerciseSide {
     case front,
          back
 }

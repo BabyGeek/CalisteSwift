@@ -8,6 +8,6 @@
 import Foundation
 
 /// An exercise that can have progressions
-protocol Progressable {
+public protocol Progressable {
     var progressions: [any Exercisable] { get }
 }

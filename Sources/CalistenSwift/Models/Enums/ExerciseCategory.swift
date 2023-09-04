@@ -8,7 +8,7 @@
 import Foundation
 
 /// Category of an exercise
-enum ExerciseCategory {
+public enum ExerciseCategory {
     case dynamic,
          warmup,
          mobility,

@@ -8,7 +8,7 @@
 import Foundation
 
 /// Direction of an exercise, mostly pulling or pushing exercises
-enum ExerciseDirection {
+public enum ExerciseDirection {
     case horizontal,
          vertical
 }

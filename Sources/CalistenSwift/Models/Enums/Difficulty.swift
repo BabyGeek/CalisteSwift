@@ -8,7 +8,7 @@
 import Foundation
 
 /// The difficulty of an exercise
-enum Difficulty {
+public enum Difficulty {
     case beginner,
          intermediate,
          advanced

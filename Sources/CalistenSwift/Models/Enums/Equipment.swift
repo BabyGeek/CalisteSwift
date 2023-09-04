@@ -8,7 +8,7 @@
 import Foundation
 
 /// The equipments used to train
-enum Equipment {
+public enum Equipment {
     case machine,
          dumbbell,
          resistanceBands,

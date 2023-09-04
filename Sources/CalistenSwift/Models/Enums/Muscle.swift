@@ -8,7 +8,7 @@
 import Foundation
 
 /// The different muscles that can be targetted by exercises
-enum Muscle {
+public enum Muscle {
     case shoulders,
          chest,
          biceps,

@@ -8,6 +8,6 @@
 import Foundation
 
 /// An exercise that can have routines
-protocol Routinable {
+public protocol Routinable {
     var routines: Set<Routine> { get }
 }

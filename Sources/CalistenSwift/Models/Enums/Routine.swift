@@ -8,7 +8,7 @@
 import Foundation
 
 /// The type of routine where an exercise can be included
-enum Routine {
+public enum Routine {
     case push,
          pull,
          legs,

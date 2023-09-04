@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ExerciseName: String {
+public enum ExerciseName: String {
     case germanHang,
     tuckSTC,
     advTuckSTC,

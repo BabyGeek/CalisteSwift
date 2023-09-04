@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol Sidable {
+public protocol Sidable {
     var side: ExerciseSide { get }
 }
