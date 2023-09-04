@@ -10,5 +10,8 @@ import Foundation
 /// Side that an exercise works
 public enum ExerciseSide {
     case front,
-         back
+         back,
+         up,
+         down,
+         none
 }
