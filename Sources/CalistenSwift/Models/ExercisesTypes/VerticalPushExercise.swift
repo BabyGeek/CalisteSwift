@@ -10,7 +10,7 @@ import Foundation
 public class VerticalPushExercise: Exercise {
     init(name: ExerciseName,
          difficulty: Difficulty,
-         preriquires: [Exercisable] = [],
+         prerequisites: [Exercisable] = [],
          progressions: [Exercisable] = [],
          routines: Set<Routine> = [.fullBody, .upperBody, .push, .EMOM, .HIIT],
          targetMuscles: Set<Muscle>,
@@ -22,7 +22,7 @@ public class VerticalPushExercise: Exercise {
         super.init(
             name: name,
             difficulty: difficulty,
-            preriquires: preriquires,
+            prerequisites: prerequisites,
             progressions: progressions,
             force: .push,
             direction: .vertical,

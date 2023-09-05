@@ -15,6 +15,19 @@ final class CalistenSwiftHorizontalExerciseTests: XCTestCase {
         XCTAssert((horizontalPullExercises as Any) is [HorizontalPullExercise])
     }
     
+    func testHorizontalPushExercises() throws {
+        let horizontalPushExercises = Exercises
+            .exercises
+            .all
+            .filterByClassification(.horizontal)
+            .filterByForce(.push)
+            .asVerticalPush()
+        
+        XCTAssertEqual(horizontalPushExercises
+                .count, 0)
+        XCTAssert((horizontalPushExercises as Any) is [HorizontalPushExercise])
+    }
+    
     func testHorizontalPullDowncastFailure() throws {
         let horizontalPullExercises: [Exercisable] = [
             HorizontalPullExercise(name: .germanHang, difficulty: .beginner, targetMuscles: [], side: .back),

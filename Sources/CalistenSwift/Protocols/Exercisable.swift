@@ -20,7 +20,7 @@ public protocol Exercisable {
     var direction: ExerciseDirection { get }
     var category: ExerciseCategory { get }
     var classification: ExerciseClassification { get }
-    var preriquires: [Exercisable] { get }
+    var preriquisites: [Exercisable] { get }
     
     var isMilestone: Bool { get }
 }

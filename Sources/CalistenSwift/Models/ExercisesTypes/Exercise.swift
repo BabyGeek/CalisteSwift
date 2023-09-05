@@ -30,7 +30,7 @@ public class Exercise: Exercisable, Routinable, Equipable, Progressable, Sidable
     
     public var classification: ExerciseClassification
     
-    public var preriquires: [Exercisable]
+    public var preriquisites: [Exercisable]
     
     public var isMilestone: Bool
     
@@ -38,7 +38,7 @@ public class Exercise: Exercisable, Routinable, Equipable, Progressable, Sidable
     
     init(name: ExerciseName,
          difficulty: Difficulty,
-         preriquires: [Exercisable],
+         prerequisites: [Exercisable],
          progressions: [Exercisable],
          force: ExerciseForce,
          direction: ExerciseDirection,
@@ -61,7 +61,7 @@ public class Exercise: Exercisable, Routinable, Equipable, Progressable, Sidable
         self.recommendedEquipments = recommendedEquipments
         self.category = category
         self.classification = classification
-        self.preriquires = preriquires
+        self.preriquisites = prerequisites
         self.side = side
         self.isMilestone = isMilestone
     }

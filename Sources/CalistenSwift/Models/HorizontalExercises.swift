@@ -761,7 +761,7 @@ public struct HorizontalExercises {
             threeSixtyPull
         ]
         
-        tuckSTC.preriquires = [
+        tuckSTC.preriquisites = [
             germanHang
         ]
         tuckSTC.progressions = [
@@ -787,7 +787,7 @@ public struct HorizontalExercises {
             threeSixtyPull
         ]
         
-        advTuckSTC.preriquires = [
+        advTuckSTC.preriquisites = [
             germanHang,
             tuckSTC
         ]
@@ -813,7 +813,7 @@ public struct HorizontalExercises {
             threeSixtyPull
         ]
         
-        pikeSTC.preriquires = [
+        pikeSTC.preriquisites = [
             germanHang,
             tuckSTC,
             advTuckSTC
@@ -839,7 +839,7 @@ public struct HorizontalExercises {
             threeSixtyPull
         ]
         
-        tuckBL.preriquires =  [
+        tuckBL.preriquisites =  [
             germanHang,
             tuckSTC,
             advTuckSTC,
@@ -856,7 +856,7 @@ public struct HorizontalExercises {
             HLtoBL
         ]
         
-        advTuckBL.preriquires = [
+        advTuckBL.preriquisites = [
             germanHang,
             tuckSTC,
             advTuckSTC,
@@ -873,7 +873,7 @@ public struct HorizontalExercises {
             HLtoBL
         ]
         
-        tuckFL.preriquires =  [
+        tuckFL.preriquisites =  [
             germanHang,
             tuckSTC,
             advTuckSTC,
@@ -895,7 +895,7 @@ public struct HorizontalExercises {
             FLRow
         ]
         
-        advTuckFL.preriquires = [
+        advTuckFL.preriquisites = [
             germanHang,
             tuckSTC,
             advTuckSTC,
@@ -917,7 +917,7 @@ public struct HorizontalExercises {
             FLRow
         ]
         
-        OLBL.preriquires = [
+        OLBL.preriquisites = [
             germanHang,
             tuckSTC,
             advTuckSTC,
@@ -934,7 +934,7 @@ public struct HorizontalExercises {
             HLtoBL
         ]
         
-        strBL.preriquires = [
+        strBL.preriquisites = [
             germanHang,
             tuckSTC,
             advTuckSTC,
@@ -951,7 +951,7 @@ public struct HorizontalExercises {
             HLtoBL
         ]
         
-        BL.preriquires = [
+        BL.preriquisites = [
             germanHang,
             tuckSTC,
             advTuckSTC,
@@ -968,7 +968,7 @@ public struct HorizontalExercises {
             HLtoBL
         ]
         
-        BLPO.preriquires = [
+        BLPO.preriquisites = [
             germanHang,
             tuckSTC,
             advTuckSTC,
@@ -985,7 +985,7 @@ public struct HorizontalExercises {
             HLtoBL
         ]
         
-        germanHangPO.preriquires = [
+        germanHangPO.preriquisites = [
             germanHang,
             tuckSTC,
             advTuckSTC,
@@ -1002,7 +1002,7 @@ public struct HorizontalExercises {
             HLtoBL
         ]
         
-        BAPUtoBL.preriquires = [
+        BAPUtoBL.preriquisites = [
             germanHang,
             tuckSTC,
             advTuckSTC,
@@ -1019,7 +1019,7 @@ public struct HorizontalExercises {
             HLtoBL
         ]
         
-        HLtoBL.preriquires = [
+        HLtoBL.preriquisites = [
             germanHang,
             tuckSTC,
             advTuckSTC,
@@ -1034,7 +1034,7 @@ public struct HorizontalExercises {
             BAPUtoBL
         ]
         
-        OLFL.preriquires =  [
+        OLFL.preriquisites =  [
             germanHang,
             tuckSTC,
             advTuckSTC,
@@ -1051,7 +1051,7 @@ public struct HorizontalExercises {
             threeSixtyPull
         ]
         
-        strFL.preriquires = [
+        strFL.preriquisites = [
             germanHang,
             tuckSTC,
             advTuckSTC,
@@ -1068,7 +1068,7 @@ public struct HorizontalExercises {
             threeSixtyPull
         ]
         
-        FL.preriquires = [
+        FL.preriquisites = [
             germanHang,
             tuckSTC,
             advTuckSTC,
@@ -1085,7 +1085,7 @@ public struct HorizontalExercises {
             threeSixtyPull
         ]
         
-        FLToInverted.preriquires = [
+        FLToInverted.preriquisites = [
             germanHang,
             tuckSTC,
             advTuckSTC,
@@ -1102,7 +1102,7 @@ public struct HorizontalExercises {
             threeSixtyPull
         ]
         
-        HPFLtoInv.preriquires = [
+        HPFLtoInv.preriquisites = [
             germanHang,
             tuckSTC,
             advTuckSTC,
@@ -1119,7 +1119,7 @@ public struct HorizontalExercises {
             threeSixtyPull
         ]
         
-        threeSixtyPull.preriquires = [
+        threeSixtyPull.preriquisites = [
             germanHang,
             tuckSTC,
             advTuckSTC,
@@ -1145,7 +1145,7 @@ public struct HorizontalExercises {
             OARow
         ]
         
-        incRow.preriquires = [
+        incRow.preriquisites = [
             VRow
         ]
         incRow.progressions = [
@@ -1158,7 +1158,7 @@ public struct HorizontalExercises {
             OARow
         ]
         
-        row.preriquires = [
+        row.preriquisites = [
             VRow,
             incRow
         ]
@@ -1171,7 +1171,7 @@ public struct HorizontalExercises {
             OARow
         ]
         
-        wideRow.preriquires = [
+        wideRow.preriquisites = [
             VRow,
             incRow,
             row
@@ -1184,7 +1184,7 @@ public struct HorizontalExercises {
             OARow
         ]
         
-        archerRow.preriquires = [
+        archerRow.preriquisites = [
             VRow,
             incRow,
             row,
@@ -1196,7 +1196,7 @@ public struct HorizontalExercises {
             OARow
         ]
         
-        archerInRow.preriquires = [
+        archerInRow.preriquisites = [
             VRow,
             incRow,
             row,
@@ -1208,7 +1208,7 @@ public struct HorizontalExercises {
             OARow
         ]
         
-        strOARow.preriquires = [
+        strOARow.preriquisites = [
             VRow,
             incRow,
             row,
@@ -1220,7 +1220,7 @@ public struct HorizontalExercises {
             OARow
         ]
         
-        OARow.preriquires = [
+        OARow.preriquisites = [
             VRow,
             incRow,
             row,
@@ -1230,7 +1230,7 @@ public struct HorizontalExercises {
             strOARow
         ]
         
-        LHang.preriquires = [
+        LHang.preriquisites = [
             germanHang,
             tuckSTC,
             advTuckSTC,
@@ -1247,7 +1247,7 @@ public struct HorizontalExercises {
             threeSixtyPull
         ]
         
-        tuckICM.preriquires = [
+        tuckICM.preriquisites = [
             germanHang,
             tuckSTC,
             advTuckSTC,
@@ -1263,7 +1263,7 @@ public struct HorizontalExercises {
             FLRow
         ]
         
-        tuckFLRow.preriquires = [
+        tuckFLRow.preriquisites = [
             germanHang,
             tuckSTC,
             advTuckSTC,
@@ -1279,7 +1279,7 @@ public struct HorizontalExercises {
             FLRow
         ]
         
-        advTuckFLRow.preriquires = [
+        advTuckFLRow.preriquisites = [
             germanHang,
             tuckSTC,
             advTuckSTC,
@@ -1295,7 +1295,7 @@ public struct HorizontalExercises {
             FLRow
         ]
         
-        advTuckFLRow.preriquires = [
+        advTuckFLRow.preriquisites = [
             germanHang,
             tuckSTC,
             advTuckSTC,
@@ -1311,7 +1311,7 @@ public struct HorizontalExercises {
             FLRow
         ]
         
-        FLRow.preriquires = [
+        FLRow.preriquisites = [
             germanHang,
             tuckSTC,
             advTuckSTC,
@@ -1330,14 +1330,14 @@ public struct HorizontalExercises {
             ironCrossToBL
         ]
         
-        ironCross.preriquires = [
+        ironCross.preriquisites = [
             ironCrossP
         ]
         ironCross.progressions = [
             ironCrossToBL
         ]
         
-        ironCrossToBL.preriquires = [
+        ironCrossToBL.preriquisites = [
             ironCrossP,
             ironCross
         ]

@@ -14,7 +14,7 @@ public class CoreExercise: Exercise {
          force: ExerciseForce,
          direction: ExerciseDirection,
          category: ExerciseCategory = .static,
-         preriquires: [Exercisable] = [],
+         prerequisites: [Exercisable] = [],
          routines: Set<Routine> = [.fullBody, .core, .EMOM, .HIIT],
          progressions: [Exercisable] = [],
          neededEquipments: Set<Equipment> = [],
@@ -23,7 +23,7 @@ public class CoreExercise: Exercise {
         super.init(
             name: name,
             difficulty: difficulty,
-            preriquires: preriquires,
+            prerequisites: prerequisites,
             progressions: progressions,
             force: force,
             direction: direction,

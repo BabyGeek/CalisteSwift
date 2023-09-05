@@ -20,19 +20,19 @@ extension Array where Element == Exercise {
             self.filter { muscles.isSubset(of: $0.targetMuscles) }
     }
     
-    public func filterByPreriquires(
-        _ preriquires: [Exercise]
+    public func filterByPrerequisites(
+        _ preriquisites: [Exercise]
     ) -> [Element] {
         self.filter { exercise in
-            var foundPreriquires = 0
+            var foundPreriquisites = 0
             
-            for preriquire in preriquires {
-                if exercise.preriquires.contains(where: { $0.name == preriquire.name }) {
-                    foundPreriquires += 1
+            for preriquisite in preriquisites {
+                if exercise.preriquisites.contains(where: { $0.name == preriquisite.name }) {
+                    foundPreriquisites += 1
                 }
             }
             
-            return foundPreriquires >= 1
+            return foundPreriquisites >= 1
         }
     }
     

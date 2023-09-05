@@ -77,9 +77,9 @@ public struct Exercises {
             .filterByMuscles(muscles)
     }
     
-    public func filterByPreriquires(_ preriquires: [Exercise]) -> [Exercise] {
+    public func filterByPrerequisites(_ prerequisites: [Exercise]) -> [Exercise] {
         all
-            .filterByPreriquires(preriquires)
+            .filterByPrerequisites(prerequisites)
     }
     
     public func milestones() -> [Exercise] {

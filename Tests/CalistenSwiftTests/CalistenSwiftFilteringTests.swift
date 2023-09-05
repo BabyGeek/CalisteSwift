@@ -38,15 +38,15 @@ final class CalistenSwiftFilteringTests: XCTestCase {
     func testFilterByOnePreriquire() throws {
         XCTAssertEqual(Exercises
             .exercises
-            .filterByPreriquires([
+            .filterByPrerequisites([
                 HorizontalPullExercise(name: .BAPUtoBL, difficulty: .advanced, targetMuscles: [], side: .back)
             ]).first!.name.translated, ExerciseName.HLtoBL.translated)
     }
     
-    func testFilterByManyPreriquires() throws {
+    func testFilterByManyprerequisites() throws {
         let filteredExercises = Exercises
             .exercises
-            .filterByPreriquires([
+            .filterByPrerequisites([
                 HorizontalPullExercise(name: .germanHangPO, difficulty: .advanced, targetMuscles: [], side: .back),
                 HorizontalPullExercise(name: .BAPUtoBL, difficulty: .advanced, targetMuscles: [], side: .back)
             ])
