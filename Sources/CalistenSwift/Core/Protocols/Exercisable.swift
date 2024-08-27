@@ -7,7 +7,7 @@
 
 import Foundation
 
-    /// Protocol that defines the common properties and methods for all exercises.
+/// Protocol that defines the common properties and methods for all exercises.
 public protocol Exerciseable {
     var name: ExerciseName { get }
     var muscleGroup: MuscleGroup { get }

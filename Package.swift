@@ -9,7 +9,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "CalistenSwift",
-            targets: ["CalistenSwift"]),
+            targets: ["CalistenSwift"])
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -18,6 +18,6 @@ let package = Package(
             name: "CalistenSwift"),
         .testTarget(
             name: "CalistenSwiftTests",
-            dependencies: ["CalistenSwift"]),
+            dependencies: ["CalistenSwift"])
     ]
 )

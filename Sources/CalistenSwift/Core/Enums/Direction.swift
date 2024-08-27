@@ -7,20 +7,20 @@
 
 import Foundation
 
-    /// Represents different directions in which exercises can be performed.
+/// Represents different directions in which exercises can be performed.
 public enum Direction {
-        /// Exercises that involve movement or force applied horizontally.
+    /// Exercises that involve movement or force applied horizontally.
     case horizontal
-    
-        /// Exercises that involve movement or force applied vertically.
+
+    /// Exercises that involve movement or force applied vertically.
     case vertical
-    
-        /// Exercises that involve movement or force applied in a diagonal direction.
+
+    /// Exercises that involve movement or force applied in a diagonal direction.
     case diagonal
-    
-        /// Exercises that involve movement or force applied in a circular motion.
+
+    /// Exercises that involve movement or force applied in a circular motion.
     case circular
-    
-        /// Exercises that involve movement or force applied in multiple directions.
+
+    /// Exercises that involve movement or force applied in multiple directions.
     case multiDirectional
 }

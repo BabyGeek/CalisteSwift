@@ -7,7 +7,7 @@
 
 import Foundation
 
-    /// A static hold where the body is suspended with legs straight and toes pointed.
+/// A static hold where the body is suspended with legs straight and toes pointed.
 public struct StraightLegHang: Exerciseable {
     public let name: ExerciseName = .straightLegHang
     public let muscleGroup: MuscleGroup = .core
@@ -29,6 +29,6 @@ public struct StraightLegHang: Exerciseable {
         .init(order: 4, exerciseName: .passiveHang)
     ]
     public let progressions: [ExerciseProgression] = []
-    
+
     public init() {}
 }

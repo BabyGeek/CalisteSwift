@@ -7,7 +7,7 @@
 
 import Foundation
 
-    /// A static hold where the body is suspended with the legs bent and hips flexed.
+/// A static hold where the body is suspended with the legs bent and hips flexed.
 public struct TuckHang: Exerciseable {
     public let name: ExerciseName = .tuckHang
     public let muscleGroup: MuscleGroup = .core

@@ -7,7 +7,7 @@
 
 import Foundation
 
-    /// A static hold where the body is suspended and actively engaged.
+/// A static hold where the body is suspended and actively engaged.
 public struct ActiveHang: Exerciseable {
     public let name: ExerciseName = .activeHang
     public let muscleGroup: MuscleGroup = .upperBody

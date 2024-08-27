@@ -1,0 +1,29 @@
+disabled_rules:
+  - colon
+  - comma
+
+opt_in_rules:
+  - empty_count
+  - explicit_init
+  - indentation
+
+included:
+  - Sources
+  - Tests
+
+excluded:
+  - fastlane
+
+line_length: 120
+
+indentation:
+  indentation_width: 4
+  include_comments: true
+
+custom_rules:
+  no_todo:
+    included: ".*.swift"
+    name: "No TODOs"
+    regex: "TODO"
+    message: "Please resolve all TODOs before committing."
+    severity: warning
