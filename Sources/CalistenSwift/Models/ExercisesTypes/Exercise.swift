@@ -7,12 +7,14 @@
 
 import Foundation
 
-public class Exercise: Exercisable, Routinable, Equipable, Progressable, Sidable {
+public class Exercise: Exercisable, Routinable, Equipable, Progressable, Regressable, Variable, Sidable {
     public var name: ExerciseName
     
     public var difficulty: Difficulty
     
-    public var progressions: [Exercisable]
+    public var progressions: [ExerciseName]
+    
+    public var regressions: [ExerciseName]
     
     public var targetMuscles: Set<Muscle>
     
@@ -26,43 +28,49 @@ public class Exercise: Exercisable, Routinable, Equipable, Progressable, Sidable
     
     public var recommendedEquipments: Set<Equipment>
     
-    public var category: ExerciseCategory
+    public var categories: [ExerciseCategory]
     
     public var classification: ExerciseClassification
     
-    public var preriquisites: [Exercisable]
+    public var prerequisites: [ExerciseName]
     
     public var isMilestone: Bool
     
     public var side: ExerciseSide
     
+    public var variations: [ExerciseName]
+    
     init(name: ExerciseName,
          difficulty: Difficulty,
-         prerequisites: [Exercisable],
-         progressions: [Exercisable],
+         prerequisites: [ExerciseName],
+         progressions: [ExerciseName],
+         regressions: [ExerciseName],
          force: ExerciseForce,
          direction: ExerciseDirection,
          routines: Set<Routine>,
          targetMuscles: Set<Muscle>,
          neededEquipments: Set<Equipment>,
          recommendedEquipments: Set<Equipment>,
-         category: ExerciseCategory,
+         categories: [ExerciseCategory],
          classification: ExerciseClassification,
          side: ExerciseSide,
+         variations: [ExerciseName],
          isMilestone: Bool) {
         self.name = name
         self.difficulty = difficulty
         self.progressions = progressions
+        self.regressions = regressions
         self.force = force
         self.direction = direction
         self.routines = routines
         self.targetMuscles = targetMuscles
         self.neededEquipments = neededEquipments
         self.recommendedEquipments = recommendedEquipments
-        self.category = category
+        self.categories = categories
         self.classification = classification
-        self.preriquisites = prerequisites
+        self.prerequisites = prerequisites
         self.side = side
+        self.variations = variations
         self.isMilestone = isMilestone
     }
 }

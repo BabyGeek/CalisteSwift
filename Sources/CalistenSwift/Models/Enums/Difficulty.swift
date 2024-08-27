@@ -11,5 +11,6 @@ import Foundation
 public enum Difficulty {
     case beginner,
          intermediate,
-         advanced
+         advanced,
+         expert
 }

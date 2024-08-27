@@ -19,7 +19,7 @@ public enum Muscle {
          lats,
          erectorSpinae,
          glutes,
-         harmstrings,
+         hamstrings,
          legs,
          trapezius,
          dorsals,
@@ -38,8 +38,9 @@ public enum Muscle {
          hipFlexors,
          deltoids,
          hips,
-         seratusAnterior,
+         serratusAnterior,
          posteriodDeltoids,
          rhomboid,
-         teresMinor
+         teresMinor,
+         teresMajor
 }

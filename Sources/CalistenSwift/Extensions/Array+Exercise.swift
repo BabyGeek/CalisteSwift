@@ -21,18 +21,18 @@ extension Array where Element == Exercise {
     }
     
     public func filterByPrerequisites(
-        _ preriquisites: [Exercise]
+        _ prerequisites: [Exercise]
     ) -> [Element] {
         self.filter { exercise in
-            var foundPreriquisites = 0
+            var foundPrerequisites = 0
             
-            for preriquisite in preriquisites {
-                if exercise.preriquisites.contains(where: { $0.name == preriquisite.name }) {
-                    foundPreriquisites += 1
+            for preriquisite in prerequisites {
+                if exercise.prerequisites.contains(where: { $0.name == preriquisite.name }) {
+                    foundPrerequisites += 1
                 }
             }
             
-            return foundPreriquisites >= 1
+            return foundPrerequisites >= 1
         }
     }
     

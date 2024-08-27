@@ -9,5 +9,5 @@ import Foundation
 
 /// An exercise that can have progressions
 public protocol Progressable {
-    var progressions: [Exercisable] { get }
+    var progressions: [ExerciseName] { get }
 }

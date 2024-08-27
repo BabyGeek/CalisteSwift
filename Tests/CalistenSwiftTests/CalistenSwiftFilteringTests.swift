@@ -142,4 +142,8 @@ final class CalistenSwiftFilteringTests: XCTestCase {
             .filterByDirection(.horizontal)
             .count, 38)
     }
+    
+    func testTest() throws {
+        dump(Exercises.exercises.all.map({ $0.name.translated }).joined(separator: "\n -"))
+    }
 }

@@ -13,6 +13,5 @@ public enum ExerciseCategory {
          warmup,
          mobility,
          stretching,
-         `static`,
-         mixed([ExerciseCategory])
+         `static`
 }

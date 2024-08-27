@@ -13,23 +13,36 @@
 "tuckSTC" = "Tuck Skin The Cat";
 "advTuckSTC" = "Advanced Tuck Skin The Cat";
 "pikeSTC" = "Pike Skin The Cat";
-"tuckBL" = "Tuck Back Lever";
-"advTuckBL" = "Advanced Tuck Back Lever";
 "tuckFL" = "Tuck Front Lever";
 "advTuckFL" = "Advanced Tuck Front Lever";
+"OLFL" = "One Leg Front Lever";
+"strFL" = "Straddle Front Lever";
+"FL" = "Front Lever";
+"tuckBL" = "Tuck Back Lever";
+"advTuckBL" = "Advanced Tuck Back Lever";
 "OLBL" = "One Leg Back Lever";
 "strBL" = "Straddle Back Lever";
 "BL" = "Back Lever";
 "BLPO" = "Back Lever Pullout";
-"OLFL" = "One Leg Front Lever";
-"strFL" = "Straddle Front Lever";
-"FL" = "Front Lever";
 "FLToInverted" = "Front Lever to Inverted";
 "HPFLtoInv" = "Hanging Pull Front Lever to Inverted";
 "threeSixtyPull" = "360° Pull";
 "germanHangPO" = "German Hang Pullout";
 "BAPUtoBL" = "Bent Arm Pull Up to Back Lever";
 "HLtoBL" = "Handstand Lower to Back Lever";
+"oneArmPullUp" = "One Arm Pull-Up";
+"bodyweightRow" = "Bodyweight Row";
+"australianPullUp" = "Australian Pull-Up";
+"typewriterRow" = "Typewriter Row";
+"highRow" = "High Row";
+"FLRaise" = "Front Lever Raise";
+"kneelingSAR" = "Kneeling Single-Arm Row";
+"bandPullAparts" = "Band Pull-Aparts";
+"trxRows" = "TRX Rows";
+"chestSuppRows" = "Chest Supported Row";
+"reverseGripRows" = "Reverse Grip Row";
+"singleArmDR" = "Single-Arm Dumbbell Row";
+"advancedIronCrossP" = "Advanced Iron Cross Pullouts";
 
 // Front
 "VRow" = "Vertical Row";
@@ -50,5 +63,5 @@
 "ironCross" = "Iron Cross";
 "ironCrossToBL" = "Iron Cross to Back Lever";
 
-
-
+// Errors
+"error.category.mixedContainMixed" = "Mixed categories cannot contain further mixed categories.";

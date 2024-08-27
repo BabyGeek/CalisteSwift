@@ -14,6 +14,7 @@ public enum Equipment {
          resistanceBands,
          lowParallettes,
          mediumParallettes,
+         highParallettes,
          dipBar,
          rings,
          pullUpBar,
@@ -24,5 +25,8 @@ public enum Equipment {
          sandbag,
          wristWraps,
          elbowSleeves,
-         workoutGrip
+         workoutGrip,
+         trxSuspensionTrainer,
+         inclineBench,
+         bench
 }

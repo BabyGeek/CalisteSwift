@@ -10,28 +10,32 @@ import Foundation
 public class LegPushExercise: Exercise {
     init(name: ExerciseName,
          difficulty: Difficulty,
-         prerequisites: [Exercisable] = [],
-         progressions: [Exercisable] = [],
+         prerequisites: [ExerciseName] = [],
+         progressions: [ExerciseName] = [],
+         regressions: [ExerciseName] = [],
          routines: Set<Routine> = [.fullBody, .lowerBody, .legs, .EMOM, .HIIT],
-         targetMuscles: Set<Muscle> = [.calves, .glutes, .legs, .harmstrings],
+         targetMuscles: Set<Muscle> = [.calves, .glutes, .legs, .hamstrings],
          neededEquipments: Set<Equipment> = [],
          recommendedEquipments: Set<Equipment> = [],
-         category: ExerciseCategory = .dynamic,
+         categories: [ExerciseCategory] = [.dynamic],
+         variations: [ExerciseName] = [],
          isMilestone: Bool = false) {
         super.init(
             name: name,
             difficulty: difficulty,
             prerequisites: prerequisites,
             progressions: progressions,
+            regressions: regressions,
             force: .push,
             direction: .vertical,
             routines: routines,
             targetMuscles: targetMuscles,
             neededEquipments: neededEquipments,
             recommendedEquipments: recommendedEquipments,
-            category: category,
+            categories: categories,
             classification: .legs,
             side: .none,
+            variations: variations,
             isMilestone: isMilestone)
     }
 }

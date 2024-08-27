@@ -10,29 +10,33 @@ import Foundation
 public class HorizontalPullExercise: Exercise {
     init(name: ExerciseName,
          difficulty: Difficulty,
-         prerequisites: [Exercisable] = [],
-         progressions: [Exercisable] = [],
          routines: Set<Routine> = [.fullBody, .lowerBody, .upperBody, .pull, .EMOM, .HIIT],
-         targetMuscles: Set<Muscle>,
+         targetMuscles: Set<Muscle> = [],
          neededEquipments: Set<Equipment> = [],
          recommendedEquipments: Set<Equipment> = [.chalk],
-         side: ExerciseSide,
-         category: ExerciseCategory = .dynamic,
-         isMilestone: Bool = false) {
+         categories: [ExerciseCategory] = [.dynamic],
+         isMilestone: Bool = false,
+         prerequisites: [ExerciseName] = [],
+         progressions: [ExerciseName] = [],
+         regressions: [ExerciseName] = [],
+         variations: [ExerciseName] = [],
+         side: ExerciseSide = .back) {
         super.init(
             name: name,
             difficulty: difficulty,
             prerequisites: prerequisites,
             progressions: progressions,
+            regressions: regressions,
             force: .pull,
             direction: .horizontal,
             routines: routines,
             targetMuscles: targetMuscles,
             neededEquipments: neededEquipments,
             recommendedEquipments: recommendedEquipments,
-            category: category,
+            categories: categories,
             classification: .horizontal,
             side: side,
+            variations: variations,
             isMilestone: isMilestone)
     }
 }

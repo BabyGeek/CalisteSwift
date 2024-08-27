@@ -18,9 +18,9 @@ public protocol Exercisable {
 
     var force: ExerciseForce { get }
     var direction: ExerciseDirection { get }
-    var category: ExerciseCategory { get }
+    var categories: [ExerciseCategory] { get }
     var classification: ExerciseClassification { get }
-    var preriquisites: [Exercisable] { get }
+    var prerequisites: [ExerciseName] { get }
     
     var isMilestone: Bool { get }
 }
