@@ -6,30 +6,85 @@
 //
 
 import XCTest
+@testable import CalistenSwift
 
 final class PassiveHangTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    var exercise: PassiveHang!
+    
+    override func setUp() {
+        super.setUp()
+            // Initialize the exercise object before each test
+        exercise = PassiveHang()
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    override func tearDown() {
+            // Clean up after each test
+        exercise = nil
+        super.tearDown()
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    func testPassiveHangInitialization() {
+        XCTAssertEqual(exercise.name, .activeHang)
+        XCTAssertEqual(exercise.muscleGroup, .upperBody)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testPassiveHangTargetedMuscles() {
+        XCTAssertEqual(exercise.targetedMuscles, [.shoulders, .forearms, .lats])
     }
-
+    
+    func testPassiveHangDifficulty() {
+        XCTAssertEqual(exercise.difficulty, .beginner)
+    }
+    
+    func testPassiveHangTypes() {
+        XCTAssertEqual(exercise.types, [.hold])
+    }
+    
+    func testPassiveHangRoutines() {
+        XCTAssertEqual(exercise.routines, [.pull, .upperBody, .fullBody])
+    }
+    
+    func testPassiveHangSide() {
+        XCTAssertEqual(exercise.side, .none)
+    }
+    
+    func testPassiveHangForce() {
+        XCTAssertEqual(exercise.force, .pull)
+    }
+    
+    func testPassiveHangRequiredEquipments() {
+        XCTAssertEqual(exercise.requiredEquipments, [.pullUpBar])
+    }
+    
+    func testPassiveHangOptionalEquipments() {
+        XCTAssertTrue(exercise.optionalEquipments.isEmpty)
+    }
+    
+    func testPassiveHangDirection() {
+        XCTAssertEqual(exercise.direction, .vertical)
+    }
+    
+    func testPassiveHangCategories() {
+        XCTAssertEqual(exercise.categories, [.static])
+    }
+    
+    func testPassiveHangVariations() {
+        XCTAssertTrue(exercise.variations.isEmpty)
+    }
+    
+    func testPassiveHangRegressions() {
+        XCTAssertEqual(exercise.regressions.count, 0)
+    }
+    
+    func testPassiveHangProgressions() {
+        XCTAssertEqual(exercise.progressions.count, 4)
+        XCTAssertEqual(exercise.progressions[0].order, 1)
+        XCTAssertEqual(exercise.progressions[0].exerciseName, .activeHang)
+        XCTAssertEqual(exercise.progressions[1].order, 2)
+        XCTAssertEqual(exercise.progressions[1].exerciseName, .tuckHang)
+        XCTAssertEqual(exercise.progressions[2].order, 3)
+        XCTAssertEqual(exercise.progressions[2].exerciseName, .elevatedLegHang)
+        XCTAssertEqual(exercise.progressions[3].order, 4)
+        XCTAssertEqual(exercise.progressions[4].exerciseName, .straightLegHang)
+    }
 }
