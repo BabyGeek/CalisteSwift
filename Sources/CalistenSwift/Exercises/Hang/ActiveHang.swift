@@ -7,10 +7,11 @@
 
 import Foundation
 
-public struct ActiveHang: Exercise {
+    /// A static hold where the body is suspended and actively engaged.
+public struct ActiveHang: Exerciseable {
     public let name: ExerciseName = .activeHang
     public let muscleGroup: MuscleGroup = .upperBody
-    public let targetedMuscles: [Muscle] = [.shoulders, .forearms, .lats]
+    public let targetedMuscles: [Muscle] = [.shoulders, .forearms, .lats, .trapezius]
     public let difficulty: Difficulty = .beginner
     public let types: [ExerciseType] = [.hold]
     public let routines: [Routine] = [.pull, .upperBody, .fullBody]
@@ -21,12 +22,12 @@ public struct ActiveHang: Exercise {
     public let direction: Direction = .vertical
     public let categories: [Category] = [.static]
     public let variations: [ExerciseName] = []
-    public let orderedRegressions: [ExerciseRegression] = [
+    public let regressions: [ExerciseRegression] = [
         .init(order: 1, exerciseName: .passiveHang)
     ]
-    public let orderedProgressions: [ExerciseProgression] = [
-        .init(order: 2, exerciseName: .tuckHang),
-        .init(order: 3, exerciseName: .elevatedLegHang),
-        .init(order: 4, exerciseName: .straightLegHang)
+    public let progressions: [ExerciseProgression] = [
+        .init(order: 1, exerciseName: .tuckHang),
+        .init(order: 2, exerciseName: .elevatedLegHang),
+        .init(order: 3, exerciseName: .straightLegHang)
     ]
 }
